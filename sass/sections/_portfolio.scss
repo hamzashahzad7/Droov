@@ -1,0 +1,46 @@
+.portfolio {
+    width: 100%;
+    height: auto;
+    background-color: $backcolor;
+    @include respond (phone) {}
+    .port-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &-heading {
+            font-size: 3rem;
+            color: white;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+        &-line {
+            width: 20rem;
+            height: 1px;
+            background-color: white;
+        }
+    }
+    &-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 2rem 4rem;
+        @include respond (phone) {}
+    }
+    &-card {
+        width: 24%;
+        @include respond (phone) {
+            width: 50%;
+        }
+        &-img {
+            width: 25rem;
+            opacity: .8;
+            transition: all .3s;
+            &:hover {
+                opacity: 1;
+                transform: skewY(5deg);
+            }
+        }
+    }
+}

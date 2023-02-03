@@ -1,0 +1,52 @@
+.test {
+    width: 100%;
+    height: auto;
+    background-color: $backcolor;
+    padding-bottom: 10rem;
+    &-icon {
+        font-size: 12rem;
+        color: blue;
+        margin-bottom: 5rem;
+    }
+    &-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &-heading {
+            font-size: 3rem;
+            text-transform: uppercase;
+            color: white;
+            margin: 1rem 0rem;
+        }
+        &-line {
+            width: 20rem;
+            height: 1px;
+            background-color: white;
+        }
+    }
+    &-lower {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 3rem 4rem;
+        &-left {
+            width: 30%;
+            &-p {
+                color: rgb(154, 154, 154);
+                font-size: 1.5rem;
+                line-height: 1.7;
+                margin-bottom: 2rem;
+            }
+            &-b {
+                color: rgb(154, 154, 154);
+            }
+        }
+        &-right {
+            &-img {
+                border-radius: 10px;
+                margin-top: 15rem;
+            }
+        }
+    }
+}
